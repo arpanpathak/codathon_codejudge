@@ -1,0 +1,131 @@
+.ip
+{
+	width: 80%;
+	height: 32px;
+	border-radius: 8px;
+	padding: 2px;
+	border: 2px solid #2874a6;
+}
+.ip:focus
+{
+	border: 2px solid #2874a6;
+	box-shadow: 1px 0px 10px 1px  #2874a6,1px 0px 10px 1px  gray inset;
+}
+
+
+
+/* ****************************** */
+.nav{
+	width: 100%;
+		background-color: #34495e ;
+	box-shadow: 1px 0px 20px 1px  #17202a inset,1px 0px 10px 1px black;
+	margin-top: 0px;
+	top: 0px;
+	z-index: 100;
+	margin-bottom: 15px;
+}
+.fixed-top{ position: fixed; top: 0; }
+.nav ul {
+	box-shadow: 1px 0px 20px 1px  #17202a inset,1px 0px 10px 1px black;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #34495e ;
+}
+
+.nav li {
+    float: left;
+    cursor: pointer;
+    box-shadow: 1px 0px 10px black inset;
+}
+.nav a:focus{
+	border: 1px dotted #fff;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav li a:hover:not(.active) {
+    background-color: #111;
+
+}
+
+.active {
+    /*background-color: #4CAF50;*/
+    background-color: darkred;
+}
+/* */
+
+html,body
+{
+	margin-top: 0px;
+	margin-left: 0px; margin-right: 0px;
+}
+.white-title
+{
+	font-family: Lucida Sans;
+	color: #f5eef8;
+}
+.btn
+{
+	border-radius: 10px;
+	border: 0px solid;
+	background-color:    #0177fb ;
+	cursor: pointer;
+	color: white;
+	font-weight: bold;
+	padding-top: 7px; padding-bottom: 7px; padding-right: 7px; padding-left: 7px;
+	box-shadow: 1px 0px 3px 1px blue,1px 0px 30px 1px black inset;
+}
+.btn:hover
+{
+	/* background-color:  #154360; */
+	box-shadow: 1px 0px 20px 1px  #154360 inset;
+}
+h1,h2,h3,h4,h5,h6
+{
+	padding: 0;
+	padding-bottom: 0px;
+	padding-left: 1px;
+	padding-right: 0px;
+	margin-right: 0px; margin-left: 0px; margin-bottom: 0px;
+}
+body
+{
+	background-color: #edfaf6;
+}
+.preview
+{
+	overflow: scroll;
+	position: fixed; top: 51px;right: 0px; padding: 0;width: 560px; 
+	height: 85%; background-color: white; border-radius: 5px;
+	box-shadow: 2px 0px 10px 2px black;
+}
+.panel
+{
+	border-radius: 8px; background-color:  #eef0f3 ; color; width: 50%; margin-left: 50px; 
+	min-height: 300px; box-shadow: 2px 0px 10px 1px black; padding-left: 5px;
+}
+@media only screen and (max-width:1200px){
+     .preview{
+        position: relative;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .panel
+    {
+    	width: 100%;
+    }
+}
+@media only screen and (max-height: 500px){
+	.nav a{
+		width: 100%;
+	}
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing apstyle framweorks</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<script src="js/apstyle.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<nav class="nav fixed-top">
+		<ul>
+		<li class="nav-title"><a>Navigation Menu</a></li>
+			<button class="fold" data-fold="#myNav"> &#9776; </button>
+			<div class="folded" id="myNav">
+			
+  			<li><a class="active-blue">Home</a></li>
+  			<li><a href="download.php">Download</a></li>
+  			<li><a href="#option3">Option3</a></li>
+  			<li><a href="#option4">Option4</a></li>
+  			<li class="dropdown">
+    			<a href="#" class="dropbtn">Dropdown </a>
+    			<div class="dropdown-content">
+      			<span>Link 1</span>
+      			<span>Link 2</span>
+      			<span>Link 3</span>
+    			</div>
+  			</li>
+  			<li class="dropdown">
+    			<a href="#" class="dropbtn">Dropdown2 </a>
+    			<div class="dropdown-content">
+      			<span>Menu1</span>
+      			<span>Menu2</span>
+      			<span>Link 3</span>
+    			</div>
+  			</li>
+  			<span style="float: right;"><input type="search" placeholder="search">
+  			</span>
+  			</div>
+		</ul>
+	</nav>
+
+</head>
+<body>
+
+<div class="block">
+	<h1 style="margin-top: 50px;">ApStyle Framework</h1>
+	<div class="row panel-light">
+		<div class="col4"> 
+			<h1 >About ApStyle</h1>
+
+			<p> ApStyle is a front end <strong>JAVASCRIPT</strong> and <strong>CSS</strong>
+				 web development
+				framework that makes the life of web developer and designer a lot more
+				easier.Every thing can be done by using inbuilt classes and styles.
+				You will not have to write a single piece of css code in your project.So you
+				can build your project very quickely.Also you need not to worry about scaling of components.The framework will automatically scale all the components according to every device and every thing will look very beautiful, neat and clean<button class="reddish" style="float: right;" data-scroll="#comparison">Learn More</button></p>
+		</div>
+		<div class="col4"> 
+			<h1>Why ApStyle?</h1>
+			<p> You can very easily make responsive website using ApStyle framework.The syntax
+				is super easy and you need not to remember a bunch of complicated class names
+				and you can easily and intuitively use the inbuilt classes.Unlike bootstrap, foundation, you need not to write sections for every components, ApStyle <strong>JAVASCRIPT</strong> framework will do that for you.It'll automatically insert <strong>HTML</strong> codes for the necessary sections.
+				<button class="reddish" style="float: right;" data-scroll="#comparison">Learn More</button></p>
+		</div>
+		<div class="col4"> 
+			<h1>Say no to bootstrap,foundation</h1>
+			<p> No weird class names and code structure like bootstrap and also you
+				will not have to open a lot of div like bootstrap.
+				Everything is simple, and you can do any thing by opening only
+				2 to 3 divs.ApStyle grid system is more flexible than bootstrap, foundation
+				grid system.
+				<button class="rounded" data-scroll="#comparison" style="float: right;">Learn More</button></p>
+		</div>
+	</div>
+	<div class="row panel">
+		<h4>Single Row:</h4>
+	<div class="panel-light col6">
+		 <h3>Light Panel 6 column</h3>
+	</div>
+	<div class="panel-light col4">
+		 <h3>Light Panel 4 column</h3>
+	</div>
+	<div class="panel-light col2"><h3>Light Panel 2 comumn<h3></div>
+	</div>
+	<div class="row">
+		<div class="col6">
+		<h3>6 column dock without panel</h3>
+	</div>
+	<div class="col6">
+		<h3>6 column dock without panel</h3>
+	</div>
+	<div class="row">
+		<div class="col6 panel">
+		<h3>6 column dock with panel</h3>
+	</div>
+	<div class="col6 panel">
+		<h3>6 column dock with panel</h3>
+	</div>
+	
+
+	</div>
+
+	<div id="row">
+	<div class="col4 panel-light">
+		<h3>Inside Column 4</h3>
+	</div>
+		<div class="col4 panel-light">
+		<h3> 4 column </h3>
+		<h3>Default Text Box</h3>
+		<input type="text" placeholder="Default Text Box">
+		<input type="text" class="sm" placeholder="Small Text Box">
+		<input type="text" class="lg" placeholder="Large Text Box">
+		<input type="search" placeholder="Search Box">
+	</div>
+		<div class="col4 panel-light">
+		<h3>Buttons: </h3>
+		<h4>Normal Size Buttons</h4>
+		<button type="button" data-show="#myPopup">Normal Button</button>
+		<button type="button" class="classic" data-show="#creator">Classic</button>
+		<button class="primary active-blue">Primary</button>
+		<button class="reddish">Reddish</button>
+		<hr />
+		<button class="classic"> ⚿ login</button>
+		<button type="button" class="dock" data-show="#myPopup2">Dock Button</button>
+		<hr />
+		<h4>Small Size Buttons</h4>
+				<button type="button" class="sm">Normal Button</button>
+		<button type="button" class="classic sm" data-show="#myPopup2">Classic</button>
+		<button class="primary sm">Primary</button>
+		<button class="reddish sm">Reddish</button>
+		<button type="button" class="dock sm" data-show="#myPopup2">Dock Button</button>
+	</div>
+	</div>
+	<div class="popup" id="myPopup">
+		<div class="popup-content">
+			<div class="popup-head">
+				<span class="popup-close"><b>X</b></span>
+				<h3>Popup Head</h3>
+			</div>
+			<div class="popup-body">
+				<h2>Popup Body </h2>
+				<input type="text" placeholder="Enter your name">
+				<input type="password" placeholder="Enter password">
+
+			</div>
+			<div class="popup-footer">
+				<button class="dock" data-close="#myPopup">Close Window</button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col4 panel-warning">
+			<span class="panel-close"><b>X</b></span>
+			<h2>THis is warning alert</h2>
+		</div>
+	</div>
+	<div class="block" id="comparison">
+			<h1> ApStyle vs Bootstrap </h1>
+			<div class="row panel-warning">
+		<div class="col4"> 
+			<h1 >About ApStyle</h1>
+			<p> ApStyle is a front end <strong>JAVASCRIPT</strong> and <strong>CSS</strong>
+				 web development
+				framework that makes the life of web developer and designer a lot more
+				easier.Every thing can be done by using inbuilt classes and styles.
+				You will not have to write a single piece of css code in your project.So you
+				can build your project very quickely.Also you need not to worry about scaling of components.The framework will automatically scale all the components according to every device and every thing will look very beautiful, neat and clean </p>
+		</div>
+		<div class="col4"> 
+			<h1>Why ApStyle?</h1>
+			<p> You can very easily make responsive website using ApStyle framework.The syntax
+				is super easy and you need not to remember a bunch of complicated class names
+				and you can easily and intuitively use the inbuilt classes.Unlike bootstrap, foundation, you need not to write sections for every components, ApStyle <strong>JAVASCRIPT</strong> framework will do that for you.It'll automatically insert <strong>HTML</strong> codes for the necessary sections.</p>
+		</div>
+		<div class="col4"> 
+			<h1>Say no to bootstrap,foundation</h1>
+			<p> ApStyle is a front end javascript and css web development
+				framework that makes the life of web developer and designer a lot more
+				easier.Every thing can be done by using inbuilt classes and styles.
+				You will not have to write a single piece of css code in your project.So you
+				can build your project very quickely</p>
+		</div>
+	</div>
+		</div>
+
+	<div>
+</div>
+</body>
+</html>

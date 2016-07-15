@@ -1,0 +1,141 @@
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0px solid;
+   /*  background-color: #f1f1f1; */
+   box-shadow: 1px 0px 20px 1px  #17202a inset,1px 0px 10px 1px black;
+   background-color: #34495e ;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+    transition: 1s;
+    font-size: 17px;
+    box-shadow: 1px 0px 20px 1px  #17202a inset,1px 0px 10px 1px black;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: black;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: darkred;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.panel-right
+{
+    position: fixed;
+    right: 0;
+    top: 0px;
+    height: 100%;
+    width: 15%;
+    background-color: #f1f1f1;
+    border-left: 3px double black;
+}
+/* tr { display: table; } */
+/* td { -webkit-min-logical-width: 140px;} */
+.table{ padding: 0px; border: 0px solid; width: 100%;  }
+.table-header
+{
+    
+    padding: 13px 13px;
+    color: white;
+    font-size: 14;
+    font-weight: bold;
+    
+}
+.table-header-row
+{
+    background-color: #34495e; 
+box-shadow: 3px 0px 20px 6px  black inset,1px 0px 10px 1px black;
+-webkit-box-shadow: 3px 0px 20px 6px  black inset,1px 0px 10px 1px black;
+
+}
+.table-row
+{ 
+        background-color: #f2f2f2;
+        border-radius: 0px; box-shadow: 2px 0px 20px 2px black inset;
+        -webkit-box-shadow: 2px 0px 20px 2px black inset;
+        border: 0px solid darkgray;
+        word-wrap: break-word;   
+}
+.table-row>td
+{
+    border-left: .4px solid black;
+    padding: 10px 10px;
+    font-size: 14;
+}
+.table-row:hover
+{
+    background-color: lightyellow;
+}
+.current-user
+{
+        background-color: lightgreen;
+        border-radius: 0px; box-shadow: 3px 0px 20px 6px darkgreen inset;
+        -webkit-box-shadow: 3px 0px 20px 6px darkgreen inset;
+        border: 0px solid darkgray;
+        word-wrap: break-word;  
+}
+.current-user>td
+{
+    border-left: .4px solid black;
+    padding: 10px 10px;
+    font-size: 14;
+    font-weight: bold;
+    color: black;
+}
+.current-user:hover
+{
+    background-color: green; color: white;
+}
+.winner
+{
+        -webkit-box-shadow: 1px 0px 20px 1px darkblue inset;
+        background-color: lightblue;
+        border-radius: 0px; box-shadow: 1px 0px 20px 1px black inset;
+        border: 0px solid darkgray;
+        word-wrap: break-word; 
+        box-shadow: 1px 0px 20px 1px darkblue inset;  
+}
+.winner>td
+{
+    border-left: .4px solid black;
+    padding: 10px 10px;
+    font-size: 14;
+
+}
+.highlight input[type=]
+{
+    border: 1px solid darkred;
+}
+/* Media query for making responsive panel */
+@media only screen and (max-width: 1000px){
+    .panel-right{
+        position: relative;
+        width: 100%;
+        min-height: 50px;
+        margin-bottom: 30px;
+    }
+    li
+    {
+        width: 100%;
+    }
+
+}
