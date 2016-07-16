@@ -1,9 +1,9 @@
-# codathon_codejudge_linux
+# codathon_codejudge_windows
 <b>This is the codejudge version for Windows...</b>
 <br/>
  <p>Before using the codejudge you will have to do certain things inorder to use the codejudge,user account control,admin panel and automatic ranking system.</p>p>
 
- </ br>
+ 
 <ol>
   <li>Create a mysql database at at first in your phpmyadmin and give it's name as "codathon".</li>
   <li> Now import the two .sql files, users.sql and problems.sql in your database.They are in "database_table" directory of this project</li>
@@ -14,3 +14,5 @@ Copy the compilers into compiler directory. Copy everything from inside g++ or g
   </b>
   </li>
   </ol>
+  <hr />
+  <b>Windows version is not stable, please use linux version which is faster, and more secure </b> 
