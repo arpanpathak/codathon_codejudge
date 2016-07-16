@@ -1,15 +1,4 @@
 <?php
-/************************************************************************/
-/* PHP Simple PasswordProtect v1.0                                      */
-/* ===========================                                          */
-/*                                                                      */
-/*   Written by Steve Dawson - http://www.stevedawson.com               */
-/*   Freelance Web Developer - PHP, MySQL, HTML programming             */
-/*                                                                      */
-/* This program is free software. You can redistribute it and/or modify */
-/* but please leave this header intact, thanks                          */
-/************************************************************************/
-##########################################################################
 $password = "codathonRCC";  // Modify Password to suit for access, Max 10 Char.
 ##########################################################################
 ?>
