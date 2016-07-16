@@ -1,6 +1,17 @@
 <?php
+/************************************************************************/
+/* PHP Simple PasswordProtect v1.0                                      */
+/* ===========================                                          */
+/*                                                                      */
+/*   Written by Steve Dawson - http://www.stevedawson.com               */
+/*   Freelance Web Developer - PHP, MySQL, HTML programming             */
+/*                                                                      */
+/* This program is free software. You can redistribute it and/or modify */
+/* but please leave this header intact, thanks                          */
+/************************************************************************/
+##########################################################################
 $password = "codathonRCC";  // Modify Password to suit for access, Max 10 Char.
-
+##########################################################################
 ?>
 <!DOCTYP html>
 <html>
@@ -22,7 +33,7 @@ TD { FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Verdana, Tahoma, Arial}
 // If password is valid let the user get access
 if (isset($_POST["password"]) && ($_POST["password"]=="$password")) {
 ?>
-<!-- START OF HIDDEN HTML  -->  
+<!-- START OF HIDDEN HTML - PLACE YOUR CONTENT HERE -->  
 <nav class="nav">
 <ul>
 	<b style="color: lightgray; float: left; padding-top: 5px; font-family: times;">ADMIN</b>

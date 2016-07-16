@@ -20,10 +20,8 @@ if(isset($_POST['code1']))
 		fwrite($fp, $result['input']);
 		fclose($fp);
 		$output2=$result['output'];
-
 		$output1=shell_exec('compiler\cpp\bin\g++ '.$filename." -o ".$executable_path."problem1.exe");
-		
-		$output=execute('submissions\\'.$path.'\\problem1.exe<submissions/'.$path."/input.txt");
+		$output=shell_exec("submissions\\".$path."\problem1.exe<submissions/".$path."/input.txt");
 		
 		//$output=file_get_contents("submissions\\".$path."\output1.txt");
 
@@ -75,7 +73,7 @@ if(isset($_POST['code1']))
 		$output2=$result['output'];
 		//fclose($fp);
 		$output1=shell_exec('compiler\java\bin\javac submissions\\'.$path.'\problem1.java');
-		$output=execute('compiler\java\bin\java.exe -classpath submissions/'.$path.'/ problem1<submissions/'.$path.'/input.txt');
+		$output=execute("java -classpath submissions/".$path." problem1<submissions/".$path."/input.txt");
 		//$output2=shell_exec('solved/problem1.out<solved/input.txt');
 		echo "<b>Output (Problem1 : ) </b> <br />";
 		if(@!unlink('submissions/'.$path.'/problem1.class'))

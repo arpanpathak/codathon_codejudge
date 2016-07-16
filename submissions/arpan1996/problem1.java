@@ -23,7 +23,7 @@ public class problem1 {
 					price+=order.charAt(j);
 				j++;
 			}
-			System.out.print("$"+Integer.parseInt(price)+"\n");
+			System.out.print("$"+Integer.parseInt(price)+"\nx");
 		}
 	}
 }
